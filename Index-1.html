@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cheats & Spoofers</title>
+
+    <!-- Favicon for browser -->
+    <link rel="icon" href="https://i.pinimg.com/474x/36/99/40/369940a39335162181d6ebc61dfbedc6.jpg" type="image/jpeg">
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e2e2e;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Header style */
+        header {
+            background-color: #3a0a45;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            border-bottom: 4px solid #6c0a8c;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Profile image styling */
+        .profile-img {
+            width: 50px; /* Set width */
+            height: 50px; /* Set height */
+            border-radius: 50%; /* Circular shape */
+            object-fit: cover; /* Crop image if necessary */
+            margin-left: 20px; /* Add space from the left */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #f1f1f1;
+            flex-grow: 1; /* Allow h1 to grow and take available space */
+            text-align: center; /* Center the title */
+        }
+
+        /* Cart icon */
+        .cart-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        /* Main container */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section Titles */
+        h2 {
+            color: #d3a7f7; /* Light purple */
+            margin-bottom: 10px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Style for each section */
+        .section {
+            margin-bottom: 30px;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* List style */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            background-color: #3a0a45;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .add-to-cart {
+            background-color: #6c0a8c;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .trash-can {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-left: 15px;
+        }
+
+        /* Back Arrow Button */
+        .back-arrow {
+            font-size: 1.5rem;
+            cursor: pointer;
+            background-color: #3a0a45;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        /* Cart Page Styles */
+        #cart-section {
+            display: none;
+        }
+
+        .payment-options {
+            margin-top: 20px;
+        }
+
+        .payment-option {
+            background-color: #6c0a8c;
+            color: #fff;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .payment-option.sorry {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3a0a45;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .instructions {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Profile Image (added to top left) -->
+        <img src="https://i.pinimg.com/474x/36/99/40/369940a39335162181d6ebc61dfbedc6.jpg" alt="Profile Image" class="profile-img">
+        
+        <h1>Cheats & Spoofers</h1>
+
+        <!-- Cart Icon -->
+        <div class="cart-icon" onclick="showCart()">🛒</div>
+    </header>
+
+    <div class="container">
+        <!-- Main Page: Cheats Section -->
+        <div class="section" id="main-section">
+            <h2>Cheats</h2>
+            <ul>
+                <li>
+                    <span class="product-name">SpoofX Private</span>
+                    <div>
+                        <button class="add-to-cart" onclick="addToCart('SpoofX Private')">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Spoofers Section -->
+            <h2>Spoofers</h2>
+            <ul>
+                <li>
+                    <span class="product-name">Atlas.cc Perm</span>
+                    <div>
+                        <button class="add-to-cart" onclick="addToCart('Atlas.cc Perm')">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="product-name">Vixen Perm</span>
+                    <div>
+                        <button class="add-to-cart" onclick="addToCart('Vixen Perm')">Add to Cart</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="product-name">SecHex Perm</span>
+                    <div>
+                        <button class="add-to-cart" onclick="addToCart('SecHex Perm')">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Cart Section (Hidden by default) -->
+        <div class="section" id="cart-section">
+            <button class="back-arrow" onclick="goBack()">← Back to Products</button>
+            <h2>Your Cart</h2>
+            <div id="cart-list"></div>
+
+            <!-- Payment Options Section -->
+            <div class="payment-options">
+                <h2>Payment Options</h2>
+                <button class="payment-option sorry" onclick="alert('SORRY, NOT WORKING AT THE MOMENT!')">PayPal</button>
+                <button class="payment-option" onclick="window.location.href='https://cash.app/'">CashApp</button>
+                <div class="instructions">
+                    <h3>CashApp Instructions:</h3>
+                    <ul>
+                        <li>Type <strong>$cloneshopspoofxcheat</strong> for the Cash Tag</li>
+                        <li>Note: <strong>Cash61732648</strong></li>
+                        <li>After sending, ping the owner in the Discord server to confirm your payment!</li>
+                    </ul>
+                </div>
+
+                <!-- Discord Server Boost -->
+                <button class="payment-option" onclick="window.location.href='https://discord.gg/8P3ZtGyb'">Discord Server Boost</button>
+                <div class="instructions">
+                    <h3>Discord Boost Instructions:</h3>
+                    <ul>
+                        <li>Join our <a href="https://discord.gg/8P3ZtGyb" target="_blank" style="color: #d3a7f7;">Discord Server</a></li>
+                        <li>Boost the server based on how many items you have in your cart:</li>
+                        <ul>
+                            <li>1 item = Boost 2 times</li>
+                            <li>2 items = Boost 4 times</li>
+                            <li>3 items = Boost 6 times</li>
+                            <li>And so on... </li>
+                        </ul>
+                        <li>Once completed, ping the owner in Discord to confirm your boost!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Cheats & Spoofers. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Add item to cart and store in localStorage
+        function addToCart(item) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(item);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        // Show the cart section and hide the main section
+        function showCart() {
+            document.getElementById('main-section').style.display = 'none';
+            document.getElementById('cart-section').style.display = 'block';
+            loadCart();
+        }
+
+        // Go back to the main page
+        function goBack() {
+            document.getElementById('main-section').style.display = 'block';
+            document.getElementById('cart-section').style.display = 'none';
+        }
+
+        // Load cart items from localStorage and display them
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartList = document.getElementById('cart-list');
+            cartList.innerHTML = ''; // Clear the list first
+
+            if (cart.length > 0) {
+                cart.forEach((item, index) => {
+                    let div = document.createElement('div');
+                    div.classList.add('cart-item');
+                    div.innerHTML = `
+                        <span>${item}</span>
+                        <button class="trash-can" onclick="removeFromCart(${index})">🗑️</button>
+                    `;
+                    cartList.appendChild(div);
+                });
+            } else {
+                cartList.innerHTML = '<p>No items in cart.</p>';
+            }
+        }
+
+        // Remove item from cart
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        // Load cart when page is first opened
+        window.onload = function() {
+            if (window.location.hash === '#cart') {
+                showCart();
+            } else {
+                document.getElementById('main-section').style.display = 'block';
+            }
+        };
+    </script>
+</body>
+</html>
